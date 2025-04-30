@@ -1,0 +1,78 @@
+.whyContainer {
+  display: flex;
+  padding: 60px 30px;
+  text-align: center;
+  gap: 20px;
+  background-color: #eaf0f1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+.container {
+  display: flex;
+  height: 48px;
+  width: 100%;
+  justify-content: center;
+  direction: rtl;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.container h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.container h2 span {
+  font-weight: bold;
+}
+.text {
+  color: #20202699;
+  text-align: center;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  text-align: right;
+  direction: rtl;
+  color: #20202699;
+  margin-bottom: 5px;
+}
+
+.cards div h4 {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+.section {
+  border-radius: 15px;
+  border: 1px solid #20202629;
+  background: #fff;
+  padding: 15px;
+  width: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardsIcon {
+  position: absolute;
+  left: 5px;
+  bottom: -15px;
+  width: 100px;
+  height: 150px;
+  z-index: 2;
+}
+.whyIcons {
+  width: 280px;
+  height: 280px;
+  direction: ltr;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}

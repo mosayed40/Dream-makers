@@ -1,0 +1,27 @@
+.LatestProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 88px 60px;
+  position: relative;
+  z-index: 0;
+}
+
+.LatestProjectsHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  direction: rtl;
+  font-size: 25px;
+}
+.container {
+  display: flex;
+  gap: 8px;
+  direction: ltr;
+  border: 1px solid #20202629;
+  border-radius: 32px;
+  background: #ffffff;
+  padding: 16px;
+  width: 100%;
+}
