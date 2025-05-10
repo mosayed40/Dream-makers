@@ -26,22 +26,14 @@
   left: 0;
   z-index: 1;
 }
-.models {
-  display: flex;
-  /* max-width: 350px; */
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  direction: rtl;
-}
+
 .MiniatureModel {
   display: flex;
-  width: 25%;
+  width: 60%;
   padding: 32px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 32px;
   background: #fff;
   border: 1px solid #20202629;
@@ -61,7 +53,7 @@
   margin-bottom: 8px;
 }
 .MasterModel {
-  width: 50%;
+  width: 100%;
   display: flex;
   padding: 56px;
   flex-direction: column;

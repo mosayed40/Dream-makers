@@ -31,6 +31,7 @@ export default function LatestArticles() {
             overflowX: "hidden",
             direction: "rtl",
             width: "90%",
+            columnWidth: "300px",
           }}
         >
           <div
@@ -39,6 +40,10 @@ export default function LatestArticles() {
               borderRadius: "16px",
               background: "#fff",
               direction: "rtl",
+              display: "flex",
+              flex: "1",
+              gap: "10px",
+              flexDirection: "column",
             }}
           >
             <img src="assets/images/photos/Article_Image.png" />
@@ -53,6 +58,10 @@ export default function LatestArticles() {
               borderRadius: "16px",
               background: "#fff",
               direction: "rtl",
+              display: "flex",
+              flex: "1",
+              gap: "10px",
+              flexDirection: "column",
             }}
           >
             <img src="assets/images/photos/Article_Image.png" />
@@ -67,6 +76,10 @@ export default function LatestArticles() {
               borderRadius: "16px",
               background: "#fff",
               direction: "rtl",
+              display: "flex",
+              flex: "1",
+              gap: "10px",
+              flexDirection: "column",
             }}
           >
             <img src="assets/images/photos/Article_Image.png" />

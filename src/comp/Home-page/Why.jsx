@@ -67,7 +67,6 @@ export default function Why() {
           </div>
         </div>
       </div>
-
       <img src="/assets/icons/icon/imgGroup.svg" className={styles.whyIcons} />
     </div>
   );
