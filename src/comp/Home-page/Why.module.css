@@ -11,16 +11,7 @@
   z-index: 0;
 }
 
-.container {
-  display: flex;
-  height: 48px;
-  width: 100%;
-  justify-content: center;
-  direction: rtl;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-}
+
 .container h2 {
   font-weight: 400;
   font-size: 40px;

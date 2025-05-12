@@ -1,11 +1,11 @@
-import { AlignLeft, Sidebar } from "lucide-react";
+import { AlignLeft, X } from "lucide-react";
 import styles from "./Header.module.css";
 import { useState } from "react";
 
 export default function Header() {
   return (
     <header className={styles.head}>
-      <HandleMenu />
+      <Menu />
       <Logo />
       <PageTitles />
       <Buttons />
@@ -13,7 +13,7 @@ export default function Header() {
   );
 }
 // Handle Menu ***********
-function HandleMenu() {
+function Menu() {
   const [Sidebar, setSideBar] = useState(false);
   function SideBarStatus() {
     if (Sidebar === false) {
@@ -22,44 +22,42 @@ function HandleMenu() {
       setSideBar(false);
     }
   }
-  function MenuTtatus() {
-    return (
-      <div className={styles.menu}>
-        <div className={styles.handleMenu}>
-          <div className={styles.handlePageTitles}>
-            <a href="#">
-              <h3>الرئيسة</h3>
-            </a>
-            <a href="#">
-              <h3>خدماتنا</h3>
-            </a>
-            <a href="#">
-              <h3>مشاريعنا</h3>
-            </a>
-            <a href="#">
-              <h3>كيف يتم الامر</h3>
-            </a>
-            <a href="#">
-              <h3>الاسعار</h3>
-            </a>
-            <a href="#">
-              <h3>المدونه</h3>
-            </a>
-            <a href="#">
-              <h3>تعرف علينا</h3>
-            </a>
-          </div>
-          <button className={styles.handleButton}>ع</button>
-        </div>
-      </div>
-    );
-  }
+
   return (
     <>
       <a href="#" onClick={SideBarStatus} className={styles.statusMenu}>
-        <AlignLeft color="white" />
+        {Sidebar ? <X color="white" /> : <AlignLeft color="white" />}
       </a>
-      {Sidebar === true && MenuTtatus()}
+      {Sidebar === true && (
+        <div className={styles.menu}>
+          <div className={styles.handleMenu}>
+            <div className={styles.handlePageTitles}>
+              <a href="#">
+                <h3>الرئيسة</h3>
+              </a>
+              <a href="#">
+                <h3>خدماتنا</h3>
+              </a>
+              <a href="#">
+                <h3>مشاريعنا</h3>
+              </a>
+              <a href="#">
+                <h3>كيف يتم الامر</h3>
+              </a>
+              <a href="#">
+                <h3>الاسعار</h3>
+              </a>
+              <a href="#">
+                <h3>المدونه</h3>
+              </a>
+              <a href="#">
+                <h3>تعرف علينا</h3>
+              </a>
+            </div>
+            <button className={styles.handleButton}>ع</button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
