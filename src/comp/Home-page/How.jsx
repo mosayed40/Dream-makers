@@ -1,12 +1,14 @@
+import ComponentAddress from "../component address";
 import styles from "./How.module.css";
 
 export default function How() {
   return (
     <div className={styles.HowContainer}>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <img src="/assets/icons/icon/Layer.svg" />
         <h2>كيف يتم الامر؟</h2>
-      </div>
+      </div> */}
+      <ComponentAddress title={"كيف يتم الامر"} />
       <div className={styles.HowSection}>
         <div className={styles.presentation}>
           <img src="/assets/icons/icon/iconPresentation.svg" />

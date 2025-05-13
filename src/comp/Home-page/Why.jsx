@@ -2,73 +2,52 @@ import ComponentAddress from "../component address";
 import styles from "./Why.module.css";
 
 export default function Why() {
+  const data = [
+    {
+      title: "احصل على المستثمر الأول حتى قبل أن تبدأ",
+      text: "سوف تنضم شركة صانعى الاحلام إلى رحلتك الناشئة لتصبح المستثمر الأول في شركتك الناشئة, حتى قبل أن تبدأ.",
+    },
+    {
+      title: "امتلك فريقك الفني الكامل",
+      text: "امتلك فريقك الخاص لدعم شركتك الناشئة المتنامية في جميع المجالات التقنية مثل التطوير والبنية التحتية والتسويق الرقمي ..الخ.",
+    },
+    {
+      title: "وفر جميع تكاليف الأجهزة والبرامج الخاصة بك",
+      text: "العمل مع صانعى الاحلام يوفر عليك تكاليف الأدوات والأجهزة التقنية التى سوف تحتاج. ,نحن نقدم لك منتج جاهز للاستخدام.",
+    },
+    {
+      title: "الإرشاد من القادة ذوي الخبرة والناجحين",
+      text: "قادة ذوو خبرة لتوجيهك في جميع جوانب مجال بدء التشغيل والتأكد من ذلك, لديك عمل ناجح.",
+    },
+  ];
   return (
     <div className={styles.whyContainer}>
-      <ComponentAddress />
+      <ComponentAddress title={"لماذا صانعي الاحلام"} />
       <p className={styles.text}>
         نحل مشكلة رياديين الأعمال الذين يفتقرون للجانب التقني ويحتاجون شريك
         يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون <br /> هم
         الجانب التقني ابدا.
       </p>
-      {/* test********** */}
+      <div className={styles.container}>
+        {data.map((item, index) => (
+          <AboutOurFeatures key={index} title={item.title} text={item.text} />
+        ))}
+      </div>
+      {/* <img src="/assets/images/photos/Group2.svg" className={styles.img} /> */}
       <img src="/assets/icons/icon/imgGroup.svg" className={styles.whyIcons} />
     </div>
   );
 }
-function nn() {}
-function test() {
-  <div className={styles.cardsContainer}>
-    <div className={styles.cards}>
-      <div className={styles.section}>
-        <h4>احصل على المستثمر الأول حتى قبل أن تبدأ</h4>
-        <p>
-          سوف تنضم شركة صانعى الاحلام إلى رحلتك الناشئة لتصبح المستثمر
-          <br /> الأول في شركتك الناشئة, حتى قبل أن تبدأ.
-        </p>
-        <img
-          src="/assets/icons/icon/iconGroup.svg"
-          className={styles.cardsIcon}
-        />
-      </div>
-      <div className={styles.section}>
-        <h4>امتلك فريقك الفني الكامل</h4>
-        <p>
-          امتلك فريقك الخاص لدعم شركتك الناشئة المتنامية في جميع
-          <br /> المجالات التقنية مثل التطوير والبنية التحتية والتسويق الرقمي
-          ..الخ.
-        </p>
-        <img
-          src="/assets/icons/icon/iconGroup.svg"
-          className={styles.cardsIcon}
-        />
-      </div>
-    </div>
 
+function AboutOurFeatures({ title, text }) {
+  return (
     <div className={styles.cards}>
-      <div className={styles.section}>
-        <h4>وفر جميع تكاليف الأجهزة والبرامج الخاصة بك</h4>
-        <p>
-          العمل مع صانعى الاحلام يوفر عليك تكاليف الأدوات والأجهزة التقنية
-          <br />
-          التى سوف تحتاج. ,نحن نقدم لك منتج جاهز للاستخدام.
-        </p>
-        <img
-          src="/assets/icons/icon/iconGroup.svg"
-          className={styles.cardsIcon}
-        />
-      </div>
-      <div className={styles.section}>
-        <h4>الإرشاد من القادة ذوي الخبرة والناجحين</h4>
-        <p>
-          قادة ذوو خبرة لتوجيهك في جميع جوانب مجال بدء التشغيل والتأكد من
-          <br />
-          ذلك, لديك عمل ناجح.
-        </p>
-        <img
-          src="/assets/icons/icon/iconGroup.svg"
-          className={styles.cardsIcon}
-        />
-      </div>
+      <h4 className={styles.title}>{title}</h4>
+      <p>{text}</p>
+      <img
+        src="/assets/icons/icon/iconGroup.svg"
+        className={styles.cardsIcon}
+      />
     </div>
-  </div>;
+  );
 }
