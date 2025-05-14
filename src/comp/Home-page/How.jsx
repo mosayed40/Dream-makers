@@ -2,55 +2,63 @@ import ComponentAddress from "../component address";
 import styles from "./How.module.css";
 
 export default function How() {
+  const howSteps = [
+    {
+      icon: "/assets/icons/icon/iconPresentation.svg",
+      title: "قدم طلب شراكة",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma",
+      img: "/assets/icons/icon/iconBreak.svg",
+    },
+    {
+      icon: "/assets/icons/icon/iconReview.svg",
+      title: "مراجعة الطلب",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma",
+      img: "/assets/icons/icon/iconBreak.svg",
+    },
+    {
+      icon: "/assets/icons/icon/iconInterview.svg",
+      title: "مقابلة شخصية",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma",
+      img: "/assets/icons/icon/iconBreak.svg",
+    },
+    {
+      icon: "/assets/icons/icon/iconSignature.svg",
+      title: "توقيع العقد",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma",
+    },
+  ];
   return (
     <div className={styles.HowContainer}>
-      {/* <div className={styles.container}>
-        <img src="/assets/icons/icon/Layer.svg" />
-        <h2>كيف يتم الامر؟</h2>
-      </div> */}
       <ComponentAddress title={"كيف يتم الامر"} />
       <div className={styles.HowSection}>
-        <div className={styles.presentation}>
-          <img src="/assets/icons/icon/iconPresentation.svg" />
-          <h3> قدم طلب شراكة</h3>
-          <p>
-            Lorem ipsum dolor sit amet
-            <br /> consectetur adipiscing elit aliquam
-            <br /> mauris sed ma
-          </p>
-        </div>
-        <img src="/assets/icons/icon/iconBreak.svg" />
-        <div className={styles.review}>
-          <img src="/assets/icons/icon/iconReview.svg" />
-          <h3>مراجعة الطلب</h3>
-          <p>
-            Lorem ipsum dolor sit amet
-            <br /> consectetur adipiscing elit aliquam
-            <br /> mauris sed ma
-          </p>
-        </div>
-        <img src="/assets/icons/icon/iconBreak.svg" />
-        <div className={styles.interview}>
-          <img src="/assets/icons/icon/iconInterview.svg" />
-          <h3>مقابلة شخصية</h3>
-          <p>
-            Lorem ipsum dolor sit amet
-            <br /> consectetur adipiscing elit aliquam
-            <br /> mauris sed ma
-          </p>
-        </div>
-        <img src="/assets/icons/icon/iconBreak.svg" />
-        <div className={styles.signature}>
-          <img src="/assets/icons/icon/iconSignature.svg" />
-          <h3>توقيع العقد</h3>
-          <p>
-            Lorem ipsum dolor sit amet
-            <br /> consectetur adipiscing elit aliquam
-            <br /> mauris sed ma
-          </p>
-        </div>
+        {howSteps.map((step, index) => (
+          <HowSection
+            key={index}
+            icon={step.icon}
+            title={step.title}
+            description={step.description}
+            img={step.img}
+          />
+        ))}
       </div>
       <img src="/assets/images/photos/Group2.svg" className={styles.img} />
     </div>
+  );
+}
+
+function HowSection({ icon, title, description, img }) {
+  return (
+    <>
+      <div className={styles.section}>
+        <img src={icon} />
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <img src={img} />
+    </>
   );
 }
