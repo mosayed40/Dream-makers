@@ -1,23 +1,26 @@
 .LpOptionContainer {
-  height: 440px;
-  width: 100%;
+  padding: 16px 8px;
   direction: rtl;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.LpOption img {
-  width: 25%;
-}
+
 .title {
   color: #202026de;
   text-align: start;
-  font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px;
-  font-size: 40px;
+  font-size: 3em;
   margin: 10px 0;
+}
+@media screen and (max-width: 678px) {
+  .title {
+    font-size: 2em;
+    margin: 0;
+  }
+  .text {
+    font-size: 1em;
+  }
 }
 .text {
   direction: rtl;

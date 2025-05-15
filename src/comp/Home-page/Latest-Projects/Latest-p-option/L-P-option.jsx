@@ -11,11 +11,7 @@ export default function LpOption({ dir, el = "h5" }) {
             بزنس كود
           </h5>
         )}
-        {el === "h6" && (
-          <h6 style={{ direction: dir }} className={styles.title}>
-            بزنس كود
-          </h6>
-        )}
+
         <p style={{ direction: dir }} className={styles.text}>
           بزنس كود هو محفظة بطاقات الكترونية تضم انواع متعددة من البطاقات مثل
           بطاقات <br />
