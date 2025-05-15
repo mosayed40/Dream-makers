@@ -7,11 +7,12 @@ export default function Hero() {
       <div className={styles.videoContainer}>
         <HeroImage />
         <HeroText />
-        <button className={styles.button}>قدم طلب شراكة؟</button>
+        <button className={styles.button} >قدم طلب شراكة؟</button>
       </div>
     </div>
   );
 }
+
 function HeroVideo() {
   return (
     <video autoPlay loop muted className={styles.video}>

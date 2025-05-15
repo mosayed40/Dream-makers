@@ -25,7 +25,7 @@ export default function Why() {
       <ComponentAddress title={"لماذا صانعي الاحلام"} />
       <p className={styles.text}>
         نحل مشكلة رياديين الأعمال الذين يفتقرون للجانب التقني ويحتاجون شريك
-        يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون <br /> هم
+        يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون  هم
         الجانب التقني ابدا.
       </p>
       <div className={styles.container}>
@@ -38,6 +38,7 @@ export default function Why() {
     </div>
   );
 }
+
 
 function AboutOurFeatures({ title, text }) {
   return (

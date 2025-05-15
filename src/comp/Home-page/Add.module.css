@@ -1,48 +1,44 @@
 .add {
-  /* width: 100%; */
-  /* max-width: 100vh; */
-  /* height: 400px; */
   object-fit: cover;
   position: relative;
-  /* overflow: hidden; */
   display: flex;
+  gap: 16px;
   justify-content: center;
   align-items: center;
 }
 .add_content {
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
   padding: 0 60px;
   display: flex;
-  z-index: 0;
   justify-content: space-between;
   align-items: center;
   background: #012840;
+  z-index: 0;
 }
 
 .backgroundAdd {
-  position: absolute;
   width: 100%;
+  position: absolute;
+  object-fit: cover;
+  background-size: cover;
   z-index: 1;
 }
 .add_text {
-  /* width: 100%; */
-  /* height: 100%; */
   position: absolute;
-  z-index: 3;
   color: white;
   padding: 15px;
+  display: block;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  align-items: center;
+  z-index: 3;
 }
 .add_title {
-  /* margin: 15px; */
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 .add_desc {
-  /* margin: 20px; */
-  font-size: 1.2em;
+  font-size: 1.5em;
+  padding: 24px 320px;
 }
 .button {
   margin: auto;
@@ -59,34 +55,101 @@
   background: #049dd9;
   border: 0;
 }
-@media screen and (max-width: 768px) {
+.button:hover {
+  background: #0077a3;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
   .add {
-    /* width: 100%; */
-    /* height: 400px; */
-    /* object-fit: cover; */
-    /* position: relative; */
-    /* overflow: hidden; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .add_content {
-    /* flex-direction: column; */
-    padding: 0 20px;
-  }
-  .add_text {
-    margin-top: 50px;
+    padding: 0 12px;
   }
   .add_title {
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+  .add_desc {
+    font-size: 0.5em;
+    padding: 4px 18%;
+  }
+  .x_img {
+    width: 20%;
+  }
+  .img {
+    width: 50%;
+  }
+  .backgroundAdd {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .button {
+    height: 30px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .add {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .add_content {
+    padding: 0 12px;
+  }
+  .add_title {
+    font-size: 1em;
+  }
+  .add_desc {
+    font-size: 0.7em;
+    padding: 8px 20%;
+  }
+  .x_img {
+    width: 20%;
+  }
+  .img {
+    width: 50%;
+  }
+  .backgroundAdd {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .button {
+    height: 40px;
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1020px) {
+  .add_content {
+    padding: 0 16px;
+  }
+  .add_title {
+    font-size: 1.5em;
   }
   .add_desc {
     font-size: 1em;
+    padding: 16px 200px;
+  }
+  .x_img {
+    width: 20%;
   }
   .img {
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
+    width: 55%;
   }
   .backgroundAdd {
     width: 100%;

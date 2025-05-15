@@ -24,6 +24,7 @@ export default function LpOption({ dir, el = "h5" }) {
           <button className={styles.button}>بطاقات عمل</button>
           <button className={styles.button}>تطبيقات</button>
         </div>
+        
       </div>
     </div>
   );

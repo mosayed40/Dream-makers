@@ -67,7 +67,7 @@
 }
 @media screen and (max-width: 678px) {
   .head {
-    padding: 8px;
+    padding: 4px 8px;
     min-width: 100%;
   }
   .container {
@@ -82,8 +82,8 @@
     min-height: 100%;
   }
   .but_2 {
-    font-size: 0.5em;
-    padding: 4px 16px;
+    font-size: 0.8em;
+    padding: 8px 24px;
   }
   .but_1 {
     font-size: 12px;

@@ -4,6 +4,12 @@
   text-align: center;
   position: relative;
 }
+.models {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .container {
   display: flex;
   direction: rtl;
@@ -26,10 +32,12 @@
   left: 0;
   z-index: 1;
 }
-
+/* Miniature */
+/* ***************** */
 .MiniatureModel {
   display: flex;
-  width: 60%;
+  direction: rtl;
+  width: 50%;
   padding: 32px;
   flex-direction: column;
   justify-content: center;
@@ -52,6 +60,8 @@
   color: #20202699;
   margin-bottom: 8px;
 }
+/* Master */
+/* ****************** */
 .MasterModel {
   width: 100%;
   display: flex;
@@ -62,6 +72,7 @@
   gap: 16px;
   background: #012840;
   border-radius: 32px;
+  direction: rtl;
 }
 .MasterModel p {
   margin: 5px;

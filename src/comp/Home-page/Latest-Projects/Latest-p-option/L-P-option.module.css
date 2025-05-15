@@ -50,4 +50,8 @@
   border-radius: 8px;
   color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: #02436c;
 }

@@ -16,7 +16,7 @@ export default function Home() {
       <How />
       <LatestProject />
       <Add />
-      {/* <ProjectPricingExamples /> */}
+      <ProjectPricingExamples />
       {/* <AboutTheCompany /> */}
       {/* <LatestArticles /> */}
     </div>
