@@ -1,22 +1,14 @@
 .foot {
-  height: 376px;
-  background: #060c13;
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position: relative;
+  background: #060c13;
+  padding: 80px 109px;
 }
-
 .container {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 32px;
   align-self: stretch;
   color: white;
 }
@@ -27,18 +19,16 @@
   width: 160px;
   height: 220px;
 }
-.social_media_container a {
+.socialMediaContainer a {
   cursor: pointer;
 }
-
 .communication {
   direction: rtl;
   width: 100%;
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
 }
-.communication span {
+.communication div {
   width: 20%;
   color: #ffffff99;
 }
@@ -46,21 +36,78 @@
   display: flex;
   gap: 8px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
-
-.communication span a h4 {
-  color: white;
-  margin-bottom: 15px;
-}
-
 .brack {
   width: 100%;
-  height: 1px;
-  display: flex;
-  min-height: 1px;
-  background: #ffffff33;
+  color: #ffffff33;
+  display: block;
+  text-align: center;
 }
-
-.container p {
-  color: #ffffff99;
+.option {
+  text-decoration: none;
+  display: flex;
+  gap: 28px;
+}
+.option a {
+  color: white;
+  width: 20%;
+}
+.optionContainer {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.optionContainer h4 {
+  color: #fff;
+  font-size: 1.1em;
+}
+@media screen and (max-width: 600px) {
+  .foot {
+    padding: 40px 20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .communication {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .communication div {
+    width: auto;
+    text-align: center;
+  }
+  .optionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .foot {
+    padding: 40px 10px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .communication {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  .communication div {
+    width: auto;
+    text-align: center;
+  }
+  .optionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    justify-content: center;
+  }
 }
