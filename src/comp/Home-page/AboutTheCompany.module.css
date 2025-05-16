@@ -1,15 +1,14 @@
-.container {
-  padding: 150px 60px;
+.TheCompany {
+  padding: 100px 60px;
   display: flex;
   gap: 10px;
 }
-.section {
+.container {
   padding: 8px 88px;
   width: 90%;
   position: relative;
 }
-.section div {
-  border: 1px solid #000;
+.textContainer {
   direction: rtl;
   display: flex;
   padding: 56px 24px 32px 24px;
@@ -22,13 +21,15 @@
   opacity: 0.7;
   background: #fff;
 }
-.section div p {
+
+.textContainer p {
   color: #202026de;
   text-align: center;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
 }
+
 .img1 {
   position: absolute;
   top: 0;
@@ -39,15 +40,48 @@
   bottom: 0;
   left: 66px;
 }
-.section div section {
+.profile {
   display: flex;
   gap: 50px;
-  justify-content: center;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
-.section div section h4 {
+.name {
   font-size: 24px;
   font-weight: 600;
   color: #202026de;
+}
+@media screen and (max-width: 768px) {
+  .TheCompany {
+    padding: 32px 8px;
+    gap: 0px;
+  }
+  .container {
+    padding: 4px 8px;
+    width: 100%;
+  }
+  .textContainer {
+    padding: 16px 12px;
+    gap: 8px;
+    border-radius: 16px;
+  }
+  .textContainer p {
+    font-size: 0.7em;
+  }
+  .img1 {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    right: 0;
+  }
+  .img2 {
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+    left: 0;
+  }
+  .name {
+    font-size: 0.8em;
+  }
 }
