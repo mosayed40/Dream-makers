@@ -1,109 +1,52 @@
+import ComponentAddress from "../component address";
+import styles from "./Latest_articles.module.css";
+
 export default function LatestArticles() {
+  const articles = [
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
+  ];
   return (
-    <div
-      style={{
-        padding: "88px 60px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "30px",
-        alignItems: "center",
-        background: "#EAF0F1",
-        zIndex: "-1",
-      }}
-    >
-      <section
-        style={{
-          display: "flex",
-          gap: "10px",
-          direction: "rtl",
-          fontSize: "24px",
-          fontWeight: "bold",
-        }}
-      >
-        <img src="/assets/icons/icon/Layer.svg" />
-        <h2> احدث المقالات</h2>
-      </section>
-      <div style={{ position: "relative" }}>
-        <section
-          style={{
-            display: "flex",
-            gap: "16px",
-            overflowX: "hidden",
-            direction: "rtl",
-            width: "90%",
-            columnWidth: "300px",
-          }}
-        >
-          <div
-            style={{
-              padding: "20px",
-              borderRadius: "16px",
-              background: "#fff",
-              direction: "rtl",
-              display: "flex",
-              flex: "1",
-              gap: "10px",
-              flexDirection: "column",
-            }}
-          >
-            <img src="assets/images/photos/Article_Image.png" />
-            <p>10 يناير 2022</p>
-            <h6 style={{ fontSize: "15PX" }}>
-              إنشاء ألعاب tic tac toe باستخدام React JS
-            </h6>
-          </div>
-          <div
-            style={{
-              padding: "20px",
-              borderRadius: "16px",
-              background: "#fff",
-              direction: "rtl",
-              display: "flex",
-              flex: "1",
-              gap: "10px",
-              flexDirection: "column",
-            }}
-          >
-            <img src="assets/images/photos/Article_Image.png" />
-            <p>10 يناير 2022</p>
-            <h6 style={{ fontSize: "15PX" }}>
-              إنشاء ألعاب tic tac toe باستخدام React JS
-            </h6>
-          </div>
-          <div
-            style={{
-              padding: "20px",
-              borderRadius: "16px",
-              background: "#fff",
-              direction: "rtl",
-              display: "flex",
-              flex: "1",
-              gap: "10px",
-              flexDirection: "column",
-            }}
-          >
-            <img src="assets/images/photos/Article_Image.png" />
-            <p>10 يناير 2022</p>
-            <h6 style={{ fontSize: "15PX" }}>
-              إنشاء ألعاب tic tac toe باستخدام React JS
-            </h6>
-          </div>
-          <div
-            style={{
-              padding: "20px",
-              borderRadius: "16px",
-              background: "#fff",
-              direction: "rtl",
-            }}
-          >
-            <img src="assets/images/photos/Article_Image.png" />
-            <p>10 يناير 2022</p>
-            <h6 style={{ fontSize: "15PX" }}>
-              إنشاء ألعاب tic tac toe باستخدام React JS
-            </h6>
-          </div>
-        </section>
+    <section className={styles.latestArticles}>
+      <ComponentAddress title={"احدث المقالات"} />
+      <div className={styles.latestArticlesContainer}>
+        {articles.map((article, index) => (
+          <LatestArticlesContainer
+            key={index}
+            img={article.img}
+            date={article.date}
+            title={article.title}
+          />
+        ))}
       </div>
+    </section>
+  );
+}
+
+function LatestArticlesContainer({ img, date, title }) {
+  return (
+    <div className={styles.latestArticlesTitle}>
+      <img src={img} />
+      <p>{date}</p>
+      <span>{title} </span>
     </div>
   );
 }

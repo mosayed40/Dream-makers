@@ -18,7 +18,7 @@ export default function Home() {
       <Add />
       <ProjectPricingExamples />
       <AboutTheCompany />
-      {/* <LatestArticles /> */}
+      <LatestArticles />
     </div>
   );
 }
