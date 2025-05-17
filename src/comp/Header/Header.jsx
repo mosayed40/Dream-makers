@@ -22,9 +22,8 @@ function Menu() {
       setSideBar(false);
     }
   }
-
   return (
-    <>
+    <div className={styles.menuContainer}>
       <a href="#" onClick={SideBarStatus} className={styles.statusMenu}>
         {Sidebar ? <X color="white" /> : <AlignLeft color="white" />}
       </a>
@@ -33,7 +32,7 @@ function Menu() {
           <div className={styles.handleMenu}>
             <div className={styles.handlePageTitles}>
               <a href="#">
-                <h3>الرئيسة</h3>
+                <h3>الرئيسية</h3>
               </a>
               <a href="#">
                 <h3>خدماتنا</h3>
@@ -58,15 +57,16 @@ function Menu() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
+
 //  Page Titles **********
 function PageTitles() {
   return (
     <div className={styles.container}>
       <a href="#">
-        <h3 className={styles.home}>الرئيسة</h3>
+        <h3 className={styles.home}>الرئيسية</h3>
       </a>
       <a href="#">
         <h3>خدماتنا</h3>

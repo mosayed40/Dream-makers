@@ -6,9 +6,9 @@ import ComponentAddress from "../../component address";
 export default function LatestProjects() {
   return (
     <div className={styles.LatestProjectsContainer}>
-      <ComponentAddress title={"أحدث المشاريع"} />
+      <ComponentAddress title1={"أحدث المشاريع"} />
       <div className={styles.container}>
-        <LpOption el="h5" />
+        <LpOption dir="rtl" el="h5" />
         <LpPhoto />
       </div>
       <div className={styles.container}>

@@ -4,7 +4,14 @@ import styles from "./ProjectPricingExamples.module.css";
 export default function ProjectPricingExamples() {
   return (
     <div className={styles.projectPricingExamples}>
-      <ComponentAddress title={"بعض الاممثلة علي تسعير المشاريع"} />
+      <div>
+        <ComponentAddress
+          title2={"بعض الامثلة علي "}
+          title1={"تسعير المشاريع"}
+          dir={"ltr"}
+          // style={{ fontSize: "1.5rem" }}
+        />
+      </div>
       <p>
         يقدم كل مشروع شريك متطلبات مميزة؛ ,لا يوجد اثنان متشابهان، مما يجعل من
         الصعب تقديم تقديرات دون تخطيط شامل. ,أدناه، نحن <br />

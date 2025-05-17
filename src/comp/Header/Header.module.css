@@ -1,8 +1,7 @@
 .head {
   background-color: #060c13;
-  padding: 10px 60px;
+  padding: 10px 50px;
   display: flex;
-  height: 52px;
   align-items: center;
   border-bottom: 1px solid #049dd9;
   justify-content: space-between;
@@ -10,17 +9,21 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
-  gap: 16px;
   direction: rtl;
 }
-
 .button {
   display: flex;
   height: 40px;
   align-items: center;
   gap: 4px;
 }
-
+.button a {
+  text-decoration: none;
+}
+.button:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
 .but_1 {
   display: flex;
   width: 36px;
@@ -38,7 +41,6 @@
   justify-content: center;
   background-color: #060c13;
 }
-
 .but_2 {
   display: flex;
   height: 40px;
@@ -55,7 +57,6 @@
   justify-content: center;
   background-color: #060c13;
 }
-
 .container {
   display: flex;
   gap: 24px;
@@ -64,46 +65,8 @@
   color: grey;
   direction: rtl;
   height: 28px;
+  overflow: hidden;
 }
-@media screen and (max-width: 678px) {
-  .head {
-    padding: 4px 8px;
-    min-width: 100%;
-  }
-  .container {
-    gap: 8px;
-    font-size: 0.4em;
-    align-items: center;
-    display: none;
-  }
-  .button {
-    gap: 2px;
-    min-width: 20%;
-    min-height: 100%;
-  }
-  .but_2 {
-    font-size: 0.8em;
-    padding: 8px 24px;
-  }
-  .but_1 {
-    font-size: 12px;
-    display: none;
-  }
-  .logo {
-    align-items: start;
-    justify-content: center;
-    min-width: 15%;
-  }
-  .photo {
-    width: 70%;
-    height: 30%;
-  }
-  .log {
-    max-height: 50%;
-    max-width: 50%;
-  }
-}
-
 .home {
   color: white;
   border-bottom: 2px solid #049dd9;
@@ -112,58 +75,18 @@
   color: grey;
   text-decoration: none;
 }
-
 .container a:hover {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
-
 .logo {
-  direction: rtl;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
   z-index: 1000;
 }
-
-@media screen and (min-width: 679px) {
-  .head {
-    padding: 8px 20px;
-    gap: 16px;
-    min-width: 100%;
-  }
-  .container {
-    gap: 10px;
-    font-size: 0.9em;
-    overflow: hidden;
-  }
-  .button {
-    gap: 4px;
-  }
-  .but_2 {
-    padding: 8px 12px;
-    font-size: 0.7em;
-  }
-  .but_1 {
-    font-size: 0.7em;
-  }
-  .logo {
-    justify-content: center;
-    align-items: center;
-  }
-  .photo {
-    width: 70%;
-    height: 50%;
-  }
-  .log {
-    max-height: 60%;
-    max-width: 60%;
-  }
-  .statusMenu {
-    display: none;
-  }
-}
-
 .menu {
   position: fixed;
   top: 35px;
@@ -187,7 +110,6 @@
   transition: 0.3s;
   background-color: #0aaeef90;
 }
-
 .handlePageTitles h3 {
   color: #fff;
   margin: 8px 0;
@@ -212,4 +134,76 @@
 .handleButton:hover {
   background-color: #049dd9;
   cursor: pointer;
+}
+.menuContainer {
+  display: none;
+}
+@media screen and (max-width: 678px) {
+  .head {
+    padding: 4px 8px;
+  }
+  .container {
+    gap: 8px;
+    font-size: 0.4em;
+    align-items: center;
+    display: none;
+  }
+  .button {
+    gap: 2px;
+    min-width: 20%;
+    min-height: 100%;
+  }
+  .but_2 {
+    font-size: 0.8em;
+    padding: 8px 24px;
+  }
+  .but_1 {
+    font-size: 12px;
+    display: none;
+  }
+  .photo {
+    width: 70%;
+  }
+  .log {
+    max-height: 50%;
+    max-width: 50%;
+  }
+  .menuContainer {
+    display: block;
+  }
+}
+@media screen and (min-width: 679px) and (max-width: 1024px) {
+  .head {
+    padding: 8px 16px;
+    gap: 16px;
+    min-width: 100%;
+  }
+  .container {
+    font-size: 0.8em;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .button {
+    gap: 4px;
+  }
+  .but_2 {
+    padding: 8px 16;
+    font-size: 0.6em;
+  }
+  .but_1 {
+    font-size: 0.6em;
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+  }
+  .log {
+    height: 30%;
+    width: 30%;
+  }
+  .statusMenu {
+    display: none;
+  }
 }

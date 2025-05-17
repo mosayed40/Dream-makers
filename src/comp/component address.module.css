@@ -8,3 +8,23 @@
   text-align: center;
   gap: 12px;
 }
+.container h2 {
+  font-size: 2.5em;
+}
+.title1 {
+  font-weight: bold;
+}
+.title2 {
+  font-weight: normal;
+  color: #202026cc;
+}
+@media screen and (max-width: 768px) {
+  .container h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container h2 {
+    font-size: 2em;
+  }
+}

@@ -1,6 +1,12 @@
 import styles from "./L-P-option.module.css";
 
 export default function LpOption({ dir, el = "h5" }) {
+  const data = [
+    { title: "تطبيقات" },
+    { title: "بطاقات عمل" },
+    { title: "حلول ذكية" },
+    { title: "محفظة بطاقات" },
+  ];
   return (
     <div className={styles.LpOptionContainer}>
       <div style={{ direction: dir }} className={styles.LpOption}>
@@ -14,18 +20,21 @@ export default function LpOption({ dir, el = "h5" }) {
 
         <p style={{ direction: dir }} className={styles.text}>
           بزنس كود هو محفظة بطاقات الكترونية تضم انواع متعددة من البطاقات مثل
-          بطاقات <br />
-          الاعمال, بطاقات المرور, بطاقات الهوية وغيرها من البطاقات...
+          بطاقات الاعمال, بطاقات المرور, بطاقات الهوية وغيرها من البطاقات...
           <span>المزيد</span>
         </p>
-        <div className={styles.LpOptionButtonContainer}>
-          <button className={styles.button}>محفظة بطاقات</button>
-          <button className={styles.button}>حلول ذكية</button>
-          <button className={styles.button}>بطاقات عمل</button>
-          <button className={styles.button}>تطبيقات</button>
+        <div
+          className={styles.LpOptionButtonContainer}
+          style={{ direction: dir }}
+        >
+          {data.map((item, index) => (
+            <Button key={index} title={item.title} />
+          ))}
         </div>
-        
       </div>
     </div>
   );
+}
+function Button({ title }) {
+  return <button className={styles.button}>{title}</button>;
 }

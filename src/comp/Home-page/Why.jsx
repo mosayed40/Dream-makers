@@ -22,23 +22,21 @@ export default function Why() {
   ];
   return (
     <div className={styles.whyContainer}>
-      <ComponentAddress title={"لماذا صانعي الاحلام"} />
+      <ComponentAddress title2={"صانعي الاحلام"} title1={"لماذا "} />
       <p className={styles.text}>
         نحل مشكلة رياديين الأعمال الذين يفتقرون للجانب التقني ويحتاجون شريك
-        يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون  هم
-        الجانب التقني ابدا.
+        يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون هم الجانب
+        التقني ابدا.
       </p>
       <div className={styles.container}>
         {data.map((item, index) => (
           <AboutOurFeatures key={index} title={item.title} text={item.text} />
         ))}
       </div>
-      {/* <img src="/assets/images/photos/Group2.svg" className={styles.img} /> */}
       <img src="/assets/icons/icon/imgGroup.svg" className={styles.whyIcons} />
     </div>
   );
 }
-
 
 function AboutOurFeatures({ title, text }) {
   return (

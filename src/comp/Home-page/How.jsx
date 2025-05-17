@@ -33,7 +33,7 @@ export default function How() {
   ];
   return (
     <div className={styles.HowContainer}>
-      <ComponentAddress title={"كيف يتم الامر"} />
+      <ComponentAddress title1={"كيف يتم الامر؟"} />
       <div className={styles.HowSection}>
         {howSteps.map((step, index) => (
           <HowSection

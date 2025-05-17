@@ -1,21 +1,31 @@
+.LpOption {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+}
+
 .LpOptionContainer {
-  padding: 16px 8px;
-  direction: rtl;
+  padding: 16px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 52%;
 }
 
 .title {
   color: #202026de;
   text-align: start;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2em;
   margin: 10px 0;
 }
+
 @media screen and (max-width: 678px) {
   .title {
-    font-size: 2em;
+    font-size: 1.9em;
     margin: 0;
   }
   .text {
@@ -25,7 +35,7 @@
 .text {
   direction: rtl;
   color: #20202699;
-  font-size: 18px;
+  font-size: 0.9em;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;

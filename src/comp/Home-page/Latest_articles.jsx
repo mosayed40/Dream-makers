@@ -26,7 +26,7 @@ export default function LatestArticles() {
   ];
   return (
     <section className={styles.latestArticles}>
-      <ComponentAddress title={"احدث المقالات"} />
+      <ComponentAddress title1={"احدث المقالات"} />
       <div className={styles.latestArticlesContainer}>
         {articles.map((article, index) => (
           <LatestArticlesContainer

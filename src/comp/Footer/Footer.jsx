@@ -73,19 +73,19 @@ function Options({ title1, title2, title3 }) {
 function Media() {
   return (
     <div className={styles.socialMediaContainer}>
-      <a href="https://www.youtube.com/@moustafa2650" target="_blank">
+      <a href="https://www.youtube.com/@moustafa2650">
         <img src="../assets/icons/media/YouTube.svg" alt="icon"></img>
       </a>
-      <a href="https://www.linkedin.com/in/moustafa2650/" target="_blank">
+      <a href="https://www.linkedin.com/in/moustafa2650/">
         <img src="../assets/icons/media/LinkedIn.svg" alt="icon"></img>
       </a>
-      <a href="https://www.instagram.com/moustafa2650/" target="_blank">
+      <a href="https://www.instagram.com/moustafa2650/">
         <img src="../assets/icons/media/Instagram.svg" alt="icon"></img>
       </a>
-      <a href="https://twitter.com/moustafa2650" target="_blank">
+      <a href="https://twitter.com/moustafa2650">
         <img src="../assets/icons/media/Twitter.svg" alt="icon"></img>
       </a>
-      <a href="https://www.facebook.com/moustafa2650" target="_blank">
+      <a href="https://www.facebook.com/moustafa2650">
         <img src="../assets/icons/media/Facebook.svg" alt="icon"></img>
       </a>
     </div>

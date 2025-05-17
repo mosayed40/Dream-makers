@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 .text {
+  width: 80%;
   color: #20202699;
   text-align: center;
   font-weight: 500;
@@ -20,46 +21,17 @@
   display: grid;
   gap: 12px;
   grid-template-columns: 1fr 1fr;
+  direction: rtl;
 }
 
 .whyIcons {
-  width: 30%;
-  height: 50%;
+  width: 20%;
+  height: 70%;
   direction: ltr;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: -10;
-}
-
-@media screen and (max-width: 678px) {
-  .whyContainer {
-    padding: 88px 16px;
-    gap: 32px;
-  }
-  .text {
-    font-size: 1em;
-  }
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .cards {
-    /* padding: 15px 15px 15px 50px; */
-    width: 100%;
-  }
-
-  .whyIcons {
-    width: 80%;
-    height: 100%;
-    top: -165px;
-    left: -10px;
-  }
-  .cardsIcon {
-    top: -20px;
-    min-width: 15%;
-    min-height: 25%;
-    z-index: 2;
-  }
 }
 
 .cards {
@@ -87,8 +59,38 @@
 .cardsIcon {
   position: absolute;
   left: 5px;
-  bottom: -15px;
+  top: -30px;
   width: 100px;
   height: 150px;
   z-index: 2;
+}
+
+@media screen and (max-width: 678px) {
+  .whyContainer {
+    padding: 88px 16px;
+    gap: 32px;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    /* padding: 15px 15px 15px 50px; */
+    width: 100%;
+  }
+
+  .whyIcons {
+    width: 60%;
+    height: 100%;
+    top: 10%;
+    left: 0px;
+  }
+  .cardsIcon {
+    top: -28px;
+    min-width: 15%;
+    min-height: 25%;
+    z-index: 2;
+  }
 }
