@@ -1,6 +1,6 @@
-import styles from "./component address.module.css";
+import styles from "./ComponentTitle.module.css";
 
-export default function ComponentAddress({ title1, title2, dir, style }) {
+export default function ComponentTitle({ title1, title2, dir, style }) {
   return (
     <div className={styles.container}>
       <img src="/assets/icons/icon/Layer.svg" />

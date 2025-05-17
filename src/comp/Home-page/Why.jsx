@@ -1,4 +1,4 @@
-import ComponentAddress from "../component address";
+import ComponentTitle from "../ComponentTitle";
 import styles from "./Why.module.css";
 
 export default function Why() {
@@ -22,7 +22,7 @@ export default function Why() {
   ];
   return (
     <div className={styles.whyContainer}>
-      <ComponentAddress title2={"صانعي الاحلام"} title1={"لماذا "} />
+      <ComponentTitle title2={"صانعي الاحلام"} title1={"لماذا "} />
       <p className={styles.text}>
         نحل مشكلة رياديين الأعمال الذين يفتقرون للجانب التقني ويحتاجون شريك
         يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون هم الجانب

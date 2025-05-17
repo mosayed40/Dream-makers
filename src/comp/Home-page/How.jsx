@@ -1,4 +1,4 @@
-import ComponentAddress from "../component address";
+import ComponentTitle from "../ComponentTitle";
 import styles from "./How.module.css";
 
 export default function How() {
@@ -33,7 +33,7 @@ export default function How() {
   ];
   return (
     <div className={styles.HowContainer}>
-      <ComponentAddress title1={"كيف يتم الامر؟"} />
+      <ComponentTitle title1={"كيف يتم الامر؟"} />
       <div className={styles.HowSection}>
         {howSteps.map((step, index) => (
           <HowSection

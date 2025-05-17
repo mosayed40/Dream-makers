@@ -1,12 +1,12 @@
 import styles from "./Latest_projects.module.css";
 import LpPhoto from "./Latest-p-photo/L-P-photo";
 import LpOption from "./Latest-p-option/L-P-option";
-import ComponentAddress from "../../component address";
+import ComponentTitle from "../../ComponentTitle";
 
 export default function LatestProjects() {
   return (
     <div className={styles.LatestProjectsContainer}>
-      <ComponentAddress title1={"أحدث المشاريع"} />
+      <ComponentTitle title1={"أحدث المشاريع"} />
       <div className={styles.container}>
         <LpOption dir="rtl" el="h5" />
         <LpPhoto />

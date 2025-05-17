@@ -58,24 +58,22 @@
   background-color: #060c13;
 }
 .container {
+  height: 100%;
   display: flex;
   gap: 24px;
   align-items: start;
-  justify-content: center;
-  color: grey;
+  justify-content: start;
   direction: rtl;
-  height: 28px;
   overflow: hidden;
 }
-.home {
-  color: white;
-  border-bottom: 2px solid #049dd9;
-}
-.container a {
-  color: grey;
+.pages {
+  display: flex;
   text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: grey;
 }
-.container a:hover {
+.pages:hover {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;

@@ -1,4 +1,4 @@
-import ComponentAddress from "../component address";
+import ComponentTitle from "../ComponentTitle";
 import styles from "./Latest_articles.module.css";
 
 export default function LatestArticles() {
@@ -26,7 +26,7 @@ export default function LatestArticles() {
   ];
   return (
     <section className={styles.latestArticles}>
-      <ComponentAddress title1={"احدث المقالات"} />
+      <ComponentTitle title1={"احدث المقالات"} />
       <div className={styles.latestArticlesContainer}>
         {articles.map((article, index) => (
           <LatestArticlesContainer

@@ -1,15 +1,14 @@
-import ComponentAddress from "../component address";
+import ComponentTitle from "../ComponentTitle";
 import styles from "./ProjectPricingExamples.module.css";
 
 export default function ProjectPricingExamples() {
   return (
     <div className={styles.projectPricingExamples}>
       <div>
-        <ComponentAddress
+        <ComponentTitle
           title2={"بعض الامثلة علي "}
           title1={"تسعير المشاريع"}
           dir={"ltr"}
-          // style={{ fontSize: "1.5rem" }}
         />
       </div>
       <p>

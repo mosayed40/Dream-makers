@@ -1,6 +1,7 @@
 import { AlignLeft, X } from "lucide-react";
 import styles from "./Header.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -64,29 +65,52 @@ function Menu() {
 //  Page Titles **********
 function PageTitles() {
   return (
-    <div className={styles.container}>
-      <a href="#">
-        <h3 className={styles.home}>الرئيسية</h3>
-      </a>
-      <a href="#">
-        <h3>خدماتنا</h3>
-      </a>
-      <a href="#">
-        <h3>مشاريعنا</h3>
-      </a>
-      <a href="#">
-        <h3>كيف يتم الامر</h3>
-      </a>
-      <a href="#">
-        <h3>الاسعار</h3>
-      </a>
-      <a href="#">
-        <h3>المدونه</h3>
-      </a>
-      <a href="#">
-        <h3>تعرف علينا</h3>
-      </a>
-    </div>
+    // <div>
+    <ul className={styles.container}>
+      <li>
+        <Link
+          to="/"
+          className={styles.pages}
+          style={{
+            color: "white",
+            borderBottom: "2px #049dd9 solid",
+          }}
+        >
+          الرئيسية
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          خدماتنا
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          مشاريعنا
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          كيف يتم الامر
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          الاسعار
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          المدونه
+        </Link>
+      </li>
+      <li>
+        <Link to="/" className={styles.pages}>
+          تعرف علينا
+        </Link>
+      </li>
+    </ul>
+    // </div>
   );
 }
 
