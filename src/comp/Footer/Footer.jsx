@@ -5,13 +5,19 @@ export default function Footer() {
   const options = [
     {
       title1: "الموقع الالكتروني",
+      path1: "/home",
       title2: "من نحن",
+      path2: "/about",
       title3: "خدماتنا",
+      path3: "/services",
     },
     {
       title1: "الشركة",
+      path1: "/home",
       title2: "حول",
+      path2: "/about",
       title3: "المدونة",
+      path3: "/blog",
     },
     {
       title1: "تواصل معنا",
@@ -29,8 +35,11 @@ export default function Footer() {
             <Options
               key={index}
               title1={option.title1}
+              path1={option.path1}
               title2={option.title2}
+              path2={option.path2}
               title3={option.title3}
+              path3={option.path3}
             />
           ))}
         </div>
@@ -57,14 +66,18 @@ function Logo() {
   );
 }
 
-function Options({ title1, title2, title3 }) {
+function Options({ title1, title2, title3, path1, path2, path3 }) {
   return (
     <div className={styles.optionContainer}>
-      <NavLink className={styles.option}>
+      <NavLink to={path1} className={styles.option}>
         <span className={styles.title}>{title1}</span>
       </NavLink>
-      <NavLink className={styles.option}>{title2}</NavLink>
-      <NavLink className={styles.option}>{title3}</NavLink>
+      <NavLink to={path2} className={styles.option}>
+        {title2}
+      </NavLink>
+      <NavLink to={path3} className={styles.option}>
+        {title3}
+      </NavLink>
     </div>
   );
 }
