@@ -1,7 +1,7 @@
 import { AlignLeft, X } from "lucide-react";
 import styles from "./Header.module.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -15,6 +15,15 @@ export default function Header() {
 }
 // Handle Menu ***********
 function Menu() {
+  const datalink = [
+    { title: "الرئيسية", link: "/home" },
+    { title: "خدماتنا", link: "/services" },
+    { title: "مشاريعنا", link: "/projects" },
+    { title: "كيف يتم الامر", link: "/how" },
+    { title: "الاسعار", link: "/prices" },
+    { title: "المدونه", link: "/blog" },
+    { title: "تعرف علينا", link: "/about" },
+  ];
   const [Sidebar, setSideBar] = useState(false);
   function SideBarStatus() {
     if (Sidebar === false) {
@@ -31,29 +40,20 @@ function Menu() {
       {Sidebar === true && (
         <div className={styles.menu}>
           <div className={styles.handleMenu}>
-            <div className={styles.handlePageTitles}>
-              <a href="#">
-                <h3>الرئيسية</h3>
-              </a>
-              <a href="#">
-                <h3>خدماتنا</h3>
-              </a>
-              <a href="#">
-                <h3>مشاريعنا</h3>
-              </a>
-              <a href="#">
-                <h3>كيف يتم الامر</h3>
-              </a>
-              <a href="#">
-                <h3>الاسعار</h3>
-              </a>
-              <a href="#">
-                <h3>المدونه</h3>
-              </a>
-              <a href="#">
-                <h3>تعرف علينا</h3>
-              </a>
-            </div>
+            <ul>
+              {datalink.map((path, index) => (
+                <NavLink
+                  key={index}
+                  to={path.link}
+                  className={styles.navLink}
+                  style={({ isActive }) => ({
+                    style: isActive ? styles.handlePageTitles : undefined,
+                  })}
+                >
+                  <li className={styles.handlePageTitles}>{path.title}</li>
+                </NavLink>
+              ))}
+            </ul>
             <button className={styles.handleButton}>ع</button>
           </div>
         </div>
@@ -64,67 +64,48 @@ function Menu() {
 
 //  Page Titles **********
 function PageTitles() {
+  const datalink = [
+    { title: "الرئيسية", link: "/home" },
+    { title: "خدماتنا", link: "/services" },
+    { title: "مشاريعنا", link: "/projects" },
+    { title: "كيف يتم الامر", link: "/how" },
+    { title: "الاسعار", link: "/prices" },
+    { title: "المدونه", link: "/blog" },
+    { title: "تعرف علينا", link: "/about" },
+  ];
   return (
-    // <div>
     <ul className={styles.container}>
-      <li>
-        <Link
-          to="/"
-          className={styles.pages}
-          style={{
-            color: "white",
-            borderBottom: "2px #049dd9 solid",
-          }}
-        >
-          الرئيسية
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          خدماتنا
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          مشاريعنا
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          كيف يتم الامر
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          الاسعار
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          المدونه
-        </Link>
-      </li>
-      <li>
-        <Link to="/" className={styles.pages}>
-          تعرف علينا
-        </Link>
-      </li>
+      {datalink.map((path, index) => (
+        <li key={index}>
+          <NavLink
+            to={path.link}
+            className={styles.pages}
+            style={({ isActive }) => ({
+              color: isActive ? "white" : undefined,
+              borderBottom: isActive ? "2px #049dd9 solid" : undefined,
+            })}
+          >
+            {path.title}
+          </NavLink>
+        </li>
+      ))}
     </ul>
-    // </div>
   );
 }
 
 // Logo **********
 function Logo() {
   return (
-    <a className={styles.logo}>
-      <img src="/assets/icons/logo.svg" alt="logo" className={styles.log} />
+    <div className={styles.logo}>
+      <NavLink to="/home">
+        <img src="/assets/icons/logo.svg" alt="logo" className={styles.log} />
+      </NavLink>
       <img
         src="/assets/images/صانعي الاحلام.svg"
         alt="image"
         className={styles.photo}
       />
-    </a>
+    </div>
   );
 }
 
@@ -132,7 +113,10 @@ function Logo() {
 function Buttons() {
   return (
     <div className={styles.button}>
-      <button className={styles.but_2}>قدم طلب</button>
+      <NavLink to="/request">
+        <button className={styles.but_2}>قدم طلب</button>
+      </NavLink>
+
       <button className={styles.but_1}>ع</button>
     </div>
   );

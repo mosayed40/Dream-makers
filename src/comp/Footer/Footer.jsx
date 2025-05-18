@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -46,7 +47,9 @@ function Logo() {
   return (
     <div>
       <a className={styles.logo}>
-        <img src="/assets/icons/logo.svg" alt="logo" />
+        <NavLink to="/home">
+          <img src="/assets/icons/logo.svg" alt="logo" className={styles.log} />
+        </NavLink>
         <img src="/assets/images/صانعي الاحلام.svg" alt="image" />
       </a>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
@@ -57,15 +60,11 @@ function Logo() {
 function Options({ title1, title2, title3 }) {
   return (
     <div className={styles.optionContainer}>
-      <a href="#" className={styles.option}>
-        <h4> {title1}</h4>
-      </a>
-      <a className={styles.option}>
-        <p>{title2}</p>
-      </a>
-      <a className={styles.option}>
-        <p>{title3}</p>
-      </a>
+      <NavLink className={styles.option}>
+        <span className={styles.title}>{title1}</span>
+      </NavLink>
+      <NavLink className={styles.option}>{title2}</NavLink>
+      <NavLink className={styles.option}>{title3}</NavLink>
     </div>
   );
 }

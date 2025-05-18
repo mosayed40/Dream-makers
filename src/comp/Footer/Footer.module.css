@@ -36,6 +36,8 @@
   display: flex;
   gap: 8px;
   margin-bottom: 15px;
+}
+.log {
   cursor: pointer;
 }
 .brack {
@@ -47,11 +49,11 @@
 .option {
   text-decoration: none;
   display: flex;
-  gap: 28px;
+  color: #ffffff99;
 }
-.option a {
+.title {
   color: white;
-  width: 20%;
+  font-size: 1.2em;
 }
 .optionContainer {
   display: flex;

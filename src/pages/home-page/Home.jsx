@@ -7,14 +7,10 @@ import LatestProject from "../../comp/Home-page/Latest-Projects/Latest_projects"
 import ProjectPricingExamples from "../../comp/Home-page/ProjectPricingExamples";
 import AboutTheCompany from "../../comp/Home-page/AboutTheCompany";
 import LatestArticles from "../../comp/Home-page/Latest_articles";
-// import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div>
-      {/* <Link to="/">الرئيسية</Link>
-      <Link to="/about">about </Link>
-      <Link to="/mo"> mo</Link> */}
       <Hero />
       <Why />
       <How />
