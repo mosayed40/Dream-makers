@@ -1,8 +1,81 @@
 .sendRequest {
-  padding-top: 50px;
+  position: relative;
+  padding: 150px 60px 100px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
+}
+.sendRequest p {
+  text-align: center;
+  margin-top: 16px;
+  color: #20202660;
+}
+.img {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: -10;
+}
+.sendRequestContianer {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.sendRequestContianer button {
+  display: flex;
+  height: 50px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 32px;
+  background: #049dd9;
+  border: 0;
+  cursor: pointer;
+}
+.sendRequestContianer button:hover {
+  background: #13b1f0;
+}
+.UnputName {
+  direction: rtl;
+  width: 100%;
+  z-index: 10;
+}
+.UnputName h5 {
+  padding-right: 8px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.UnputName h5 span {
+  color: #202026;
+}
+.UnputName input {
+  display: block;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  outline: none;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #2020263d;
+  background: #fff;
+  width: 100%;
+}
+.contianrt {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+@media screen and (max-width: 650px) {
+  .sendRequest {
+    padding: 100px 30px 100px 30px;
+  }
+  .contianrt {
+    flex-direction: column;
+  }
 }
