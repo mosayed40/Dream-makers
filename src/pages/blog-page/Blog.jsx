@@ -10,6 +10,7 @@ export default function Blog() {
         <Options />
       </div>
       <LatestArticles />
+      <img src="../assets/images/photos/Group 3.svg" className={styles.img} />
     </div>
   );
 }
