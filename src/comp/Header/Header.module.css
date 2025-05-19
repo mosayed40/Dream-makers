@@ -138,7 +138,7 @@
 .menuContainer {
   display: none;
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 650px) {
   .head {
     padding: 4px 8px;
   }
@@ -162,28 +162,18 @@
     font-size: 12px;
     display: none;
   }
-  .photo {
-    width: 70%;
-  }
-  .log {
-    max-height: 50%;
-    max-width: 50%;
-  }
   .menuContainer {
     display: block;
   }
 }
-@media screen and (min-width: 679px) and (max-width: 1024px) {
+@media screen and (min-width: 651px) and (max-width: 1024px) {
   .head {
-    padding: 8px 16px;
-    gap: 16px;
-    min-width: 100%;
+    padding: 10px 15px;
   }
   .container {
-    font-size: 0.8em;
-    overflow: hidden;
-    justify-content: space-between;
-    /* align-items: center; */
+    padding-right: 20px;
+    font-size: 0.7rem;
+    gap: 12px;
   }
   .button {
     gap: 4px;
@@ -194,15 +184,6 @@
   }
   .but_1 {
     font-size: 0.6em;
-  }
-
-  .photo {
-    width: 100%;
-    height: 100%;
-  }
-  .log {
-    height: 30%;
-    width: 30%;
   }
   .statusMenu {
     display: none;

@@ -1,0 +1,119 @@
+.blog {
+  padding: 140px 60px 60px 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.latestArticles {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.container {
+  background: #fffffe;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #2020262b;
+  direction: rtl;
+}
+.container img {
+  width: 100%;
+}
+.container span {
+  font-weight: bold;
+}
+.blogContent {
+  direction: rtl;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #20202643;
+  width: 100%;
+}
+.search input {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  outline: none;
+  direction: rtl;
+  background: #fff;
+  color: #202026;
+}
+.search button {
+  color: #20202667;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.search button img {
+  width: 15px;
+  height: 15px;
+}
+.select {
+  min-width: 11%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #20202643;
+}
+.select button {
+  color: #20202667;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.select button img {
+  width: 15px;
+  height: 15px;
+}
+.select p {
+  padding: 4px;
+  direction: rtl;
+  color: #202026;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 650px) {
+  .blog {
+    padding: 80px 24px;
+  }
+  .latestArticles {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .blogContent {
+    direction: rtl;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .select {
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  .blog {
+    padding: 100px 32px;
+  }
+  .latestArticles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
