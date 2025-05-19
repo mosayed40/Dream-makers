@@ -1,7 +1,6 @@
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./comp/Header/Header";
 import Footer from "./comp/Footer/Footer";
-
 import Home from "./pages/home-page/Home";
 import Services from "./pages/services/Services";
 import SendRequest from "./pages/send-request/SendRequest";
@@ -16,8 +15,7 @@ export default function App() {
     <>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<NavLink />} /> */}
-
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />

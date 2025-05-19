@@ -1,7 +1,8 @@
 .foot {
-  position: relative;
   background: #060c13;
   padding: 80px 109px;
+  width: 100%;
+  position: relative;
 }
 .container {
   display: flex;

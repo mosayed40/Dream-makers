@@ -55,12 +55,12 @@ export default function Footer() {
 function Logo() {
   return (
     <div>
-      <a className={styles.logo}>
+      <span className={styles.logo}>
         <NavLink to="/home">
           <img src="/assets/icons/logo.svg" alt="logo" className={styles.log} />
         </NavLink>
         <img src="/assets/images/صانعي الاحلام.svg" alt="image" />
-      </a>
+      </span>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
     </div>
   );

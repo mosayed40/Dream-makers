@@ -1,8 +1,8 @@
 .container {
+  position: relative;
   margin: 0;
   padding: 0;
   background: black;
-  position: relative;
 }
 
 .videoContainer {
@@ -35,7 +35,10 @@
   font-size: 1.1em;
   text-align: center;
 }
-
+.buttonNav {
+  display: flex;
+  text-decoration: none;
+}
 .button {
   display: flex;
   gap: 8px;
@@ -51,9 +54,9 @@
   background: #049dd9;
 }
 .button:hover {
-    background: #0077a3;
-    cursor: pointer;
-  }
+  background: #0077a3;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 678px) {
   .container {
@@ -79,7 +82,6 @@
     padding: 12px 24px;
     height: 45px;
   }
-  
 }
 @media (min-width: 679px) and (max-width: 1024px) {
   .image {

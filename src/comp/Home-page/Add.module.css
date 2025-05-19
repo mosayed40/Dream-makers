@@ -40,6 +40,10 @@
   font-size: 1.5em;
   padding: 24px 320px;
 }
+.buttonNav {
+  display: flex;
+  text-decoration: none;
+}
 .button {
   margin: auto;
   display: flex;
@@ -90,6 +94,7 @@
     background-size: cover;
     background-position: center;
   }
+
   .button {
     height: 30px;
     padding: 4px 8px;

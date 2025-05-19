@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -7,7 +8,9 @@ export default function Hero() {
       <div className={styles.videoContainer}>
         <HeroImage />
         <HeroText />
-        <button className={styles.button} >قدم طلب شراكة؟</button>
+        <NavLink to="/request" className={styles.buttonNav}>
+          <button className={styles.button}>قدم طلب شراكة؟</button>
+        </NavLink>
       </div>
     </div>
   );

@@ -35,23 +35,26 @@
   gap: 8px;
   z-index: 2;
 }
-.MiniatureModel div {
+
+.miniature {
   display: flex;
+  flex-direction: column;
   direction: rtl;
+  text-align: center;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+}
+.features {
+  display: inline-block;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
-.MiniatureModel div p {
-  margin: 4px;
-  font-size: 12px;
-  color: #20202699;
-}
 .MiniatureModel p {
-  font-size: 14px;
-  font-weight: 700;
-  color: #049dd9;
+  color: #20202699;
+  font-size: 12px;
   margin: 4px;
 }
 .MiniatureModel h5 {

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Add.module.css";
 
 export default function Add() {
@@ -22,7 +23,9 @@ export default function Add() {
           يثقون فيه ليدير لهم الجانب التقني من الشركه بحيث ما يشيلون هم الجانب
           التقني ابدا.
         </p>
-        <button className={styles.button}>قدم طلب شراكة؟</button>
+        <NavLink to="/request" className={styles.buttonNav}>
+          <button className={styles.button}>قدم طلب شراكة؟</button>
+        </NavLink>
       </div>
     </div>
   );
