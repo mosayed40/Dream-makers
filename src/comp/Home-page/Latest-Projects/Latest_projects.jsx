@@ -7,13 +7,13 @@ export default function LatestProjects() {
   return (
     <div className={styles.LatestProjectsContainer}>
       <ComponentTitle title1={"أحدث المشاريع"} />
-      <div className={styles.container}>
-        <LpOption dir="rtl" el="h5" />
+      <div className={styles.firstContainer}>
         <LpPhoto />
+        <LpOption el="h5" style={{ direction: "rtl" }} />
       </div>
-      <div className={styles.container}>
+      <div className={styles.scondContainer}>
         <LpPhoto />
-        <LpOption dir="ltr" el="h5" />
+        <LpOption el="h5" style={{ direction: "ltr" }} />
       </div>
     </div>
   );

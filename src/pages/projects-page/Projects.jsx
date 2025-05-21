@@ -7,17 +7,17 @@ export default function Projects() {
   return (
     <div className={styles.projectsContainer}>
       <ComponentTitle title1={"مشاريع قمنا بالعمل عليها"} />
-      <div className={styles.container}>
-        <LpOption dir="rtl" el="h5" />
+      <div className={styles.primaryContainer}>
         <LpPhoto />
+        <LpOption style={{ direction: "rtl" }} el="h5" />
       </div>
-      <div className={styles.container}>
+      <div className={styles.scondeContainer}>
         <LpPhoto />
-        <LpOption dir="ltr" el="h5" />
+        <LpOption style={{ direction: "ltr" }} el="h5" />
       </div>
-      <div className={styles.container}>
-        <LpOption dir="rtl" el="h5" />
+      <div className={styles.thirdContainer}>
         <LpPhoto />
+        <LpOption style={{ direction: "rtl" }} el="h5" />
       </div>
     </div>
   );
