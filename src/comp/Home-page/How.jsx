@@ -54,7 +54,7 @@ function HowSection({ icon, title, description, img }) {
   return (
     <>
       <div className={styles.section}>
-        <img src={icon} />
+        <img src={icon} className={styles.icon} />
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

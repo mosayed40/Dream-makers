@@ -1,6 +1,6 @@
 .projectPricingExamples {
   padding: 88px 60px;
-  background-color: #eaf0f1;
+  background-color: var(--background-3);
   text-align: center;
   position: relative;
 }
@@ -10,9 +10,9 @@
   align-items: center;
   gap: 16px;
 }
-.projectPricingExamples p {
+.aboutUS {
   margin: 24px;
-  color: #20202699;
+  color: var(--text-color-2);
 }
 .backgroundImg {
   height: 60%;
@@ -25,7 +25,6 @@
 }
 
 /* Miniature */
-/* ***************** */
 .MiniatureModel {
   display: flex;
   width: 50%;
@@ -34,7 +33,7 @@
   justify-content: center;
   align-items: end;
   border-radius: 32px;
-  background: #fff;
+  background-color: var(--background-1);
   border: 1px solid #20202629;
   gap: 8px;
   z-index: 2;
@@ -48,12 +47,6 @@
   align-items: start;
   gap: 4px;
 }
-.miniature p {
-  color: #049dd9;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 4px;
-}
 .features {
   display: flex;
   direction: rtl;
@@ -62,19 +55,40 @@
   align-items: start;
   gap: 4px;
 }
-.MiniatureModel p {
-  /* color: #20202699; */
+.title_1 {
+  color: #049dd9;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 4px;
+}
+.text {
+  color: var(--text-color-2);
   font-size: 12px;
   margin: 4px;
 }
-.MiniatureModel h5 {
+.title_2 {
   font-size: 22px;
-  color: #20202699;
+  color: var(--text-color-1);
   margin-bottom: 8px;
 }
 
+.button {
+  width: 100%;
+  color: var(--text-color);
+  text-align: start;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 24px;
+  border: 1px solid #049dd9;
+  background-color: var(--background-1);
+  padding: 8px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+}
 /* Master */
-/* ****************** */
 .MasterModel {
   width: 100%;
   display: flex;
@@ -109,31 +123,7 @@
   font-size: 15px;
   color: #fff;
 }
-.features {
-  display: flex;
-  direction: rtl;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
 
-.button {
-  width: 100%;
-  color: #049dd9;
-  text-align: start;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: center;
-  border-radius: 24px;
-  border: 1px solid #049dd9;
-  background: white;
-  padding: 8px 16px;
-  margin-top: 12px;
-  cursor: pointer;
-}
 @media screen and (max-width: 768px) {
   .projectPricingExamples {
     padding: 32px 16px;

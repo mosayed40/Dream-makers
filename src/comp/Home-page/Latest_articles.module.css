@@ -4,14 +4,14 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  background: #eaf0f1;
+  background: var(--background-3);
   z-index: -1;
 }
 .latestArticlesContainer {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  overflow: hidden;
+  overflow: auto;
   direction: rtl;
   width: 100%;
   column-width: 300px;
@@ -20,7 +20,7 @@
   width: 30%;
   padding: 20px;
   border-radius: 16px;
-  background: #fff;
+  background: var(--background-1);
   direction: rtl;
   display: flex;
   gap: 10px;

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Footer.module.css";
+import { useState } from "react";
 
 export default function Footer() {
   const options = [
@@ -25,6 +26,7 @@ export default function Footer() {
       title3: "mostafa.2950@gmail.com",
     },
   ];
+
   return (
     <footer className={styles.foot}>
       <div className={styles.container}>

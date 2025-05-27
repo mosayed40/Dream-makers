@@ -23,6 +23,16 @@ export default function LatestArticles() {
       date: "10 يناير 2022",
       title: "إنشاء ألعاب tic tac toe باستخدام React JS",
     },
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
+    {
+      img: "assets/images/photos/Article_Image.png",
+      date: "10 يناير 2022",
+      title: "إنشاء ألعاب tic tac toe باستخدام React JS",
+    },
   ];
   return (
     <section className={styles.latestArticles}>

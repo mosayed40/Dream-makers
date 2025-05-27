@@ -20,6 +20,7 @@ export default function Why() {
       text: "قادة ذوو خبرة لتوجيهك في جميع جوانب مجال بدء التشغيل والتأكد من ذلك, لديك عمل ناجح.",
     },
   ];
+
   return (
     <div className={styles.whyContainer}>
       <ComponentTitle title2={"صانعي الاحلام"} title1={"لماذا "} />

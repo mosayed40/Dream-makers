@@ -19,7 +19,7 @@ export default function ProjectPricingExamples() {
           dir={"ltr"}
         />
       </div>
-      <p>
+      <p className={styles.aboutUS}>
         يقدم كل مشروع شريك متطلبات مميزة؛ ,لا يوجد اثنان متشابهان، مما يجعل من
         الصعب تقديم تقديرات دون تخطيط شامل. ,أدناه، نحن <br />
         الخطوط العريضة لمختلف, استراتيجيات التنمية التي نستخدمها كأمثلة.
@@ -64,14 +64,14 @@ function MiniatureModel({ title1, title2 }) {
   return (
     <div className={styles.MiniatureModel}>
       <div className={styles.miniature}>
-        <p> {title1}</p>
-        <h5 className={styles.title}> {title2}</h5>
+        <p className={styles.title_1}> {title1}</p>
+        <h5 className={styles.title_2}> {title2}</h5>
       </div>
 
       {features.map((feature, index) => (
         <div key={index} className={styles.features}>
           <img src="/assets/icons/inputIcon.svg" />
-          <p> {feature}</p>
+          <p className={styles.text}> {feature}</p>
         </div>
       ))}
       <NavLink to="/request" className={styles.buttonNav}>

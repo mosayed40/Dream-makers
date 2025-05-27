@@ -14,7 +14,7 @@
   padding: 16px 12px;
 }
 .title {
-  color: #202026de;
+  color: var(--text-color-1);
   text-align: start;
   font-weight: 700;
   font-size: 2em;
@@ -41,7 +41,7 @@
 }
 .text {
   direction: rtl;
-  color: #20202699;
+  color: var(--text-color-2);
   font-size: 0.9em;
   font-style: normal;
   font-weight: 400;
@@ -50,6 +50,7 @@
 .text span {
   color: #049dd9;
 }
+
 @media screen and (max-width: 650px) {
   .LpOption {
     padding: 30px 0;

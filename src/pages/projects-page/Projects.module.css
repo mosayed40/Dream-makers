@@ -16,7 +16,7 @@
   direction: rtl;
   border: 1px solid #20202629;
   border-radius: 32px;
-  background: #ffffff;
+  background-color: var(--background-1);
   padding: 16px;
   width: 100%;
   overflow: hidden;
@@ -29,7 +29,7 @@
   direction: ltr;
   border: 1px solid #20202629;
   border-radius: 32px;
-  background: #ffffff;
+  background-color: var(--background-1);
   padding: 16px;
   width: 100%;
   overflow: hidden;
@@ -42,7 +42,7 @@
   direction: rtl;
   border: 1px solid #20202629;
   border-radius: 32px;
-  background: #ffffff;
+  background-color: var(--background-1);
   padding: 16px;
   width: 100%;
   overflow: hidden;

@@ -1,4 +1,6 @@
 .LpPhotoContainer img {
   width: 100%;
-  background: white;
+  /* background: var(--background-1); */
+  border-radius: 20px;
+  border: none;
 }

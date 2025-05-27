@@ -36,7 +36,7 @@ function OurFeatures() {
     <>
       {data.map((itme, index) => (
         <div className={styles.Features} key={index}>
-          <h5>{itme.title}</h5>
+          <h4>{itme.title}</h4>
           <p>{itme.text}</p>
           <img src="/assets/icons/icon/iconGroup.svg" />
         </div>

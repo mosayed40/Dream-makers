@@ -14,14 +14,18 @@ export default function Blog() {
     </div>
   );
 }
+
 function Options() {
   return (
-    <div className={styles.select}>
-      <p>عرض الاحدث</p>
-      <button>
+    <select className={styles.select}>
+      <option>عرض الاحدث</option>
+      <option> أهم المشاريع</option>
+      <option>عرض الاقدم</option>
+      <option>عرض حسب التصنيف</option>
+      {/* <button>
         <img src="../assets/icons/icon/options.svg" />
-      </button>
-    </div>
+      </button> */}
+    </select>
   );
 }
 function Search() {

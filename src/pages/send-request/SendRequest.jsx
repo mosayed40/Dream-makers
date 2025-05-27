@@ -12,7 +12,6 @@ export default function SendRequest() {
         <UnputProject />
         <button>ارسال الطلب</button>
       </div>
-
       <img src="../assets/images/photos/Group 3.svg" className={styles.img} />
     </div>
   );
@@ -53,10 +52,13 @@ function UnputProject() {
       <h5>
         وصف المشروع <span>(مطلوب)</span>
       </h5>
+
       <input
         type="text"
         placeholder="اعطنا وصف مبسط عن المشروع..."
-        style={{ height: "120px" }}
+        style={{
+          height: "120px",
+        }}
       />
     </div>
   );

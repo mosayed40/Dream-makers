@@ -9,7 +9,7 @@
 .sendRequest p {
   text-align: center;
   margin-top: 16px;
-  color: #20202660;
+  color: var(--text-color-2);
 }
 .img {
   position: absolute;
@@ -50,9 +50,10 @@
   padding-right: 8px;
   width: 100%;
   margin-bottom: 4px;
+  color: var(--text-color);
 }
 .UnputName h5 span {
-  color: #202026;
+  color: var(--text-color-2);
 }
 .UnputName input {
   display: block;
@@ -63,7 +64,8 @@
   padding: 8px;
   border-radius: 12px;
   border: 1px solid #2020263d;
-  background: #fff;
+  background: var(--background-1);
+  color: var(--text-color);
   width: 100%;
 }
 .contianrt {

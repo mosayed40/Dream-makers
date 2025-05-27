@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
   font-size: 0.9rem;
-  color: #68676f;
+  color: var(--text-color-2);
 }
 .servicesCard {
   margin-top: 30px;
@@ -23,8 +23,8 @@
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  background-color: #eaf0f1;
-  color: #68676f;
+  background-color: var(--background-4);
+  color: var(--text-color-2);
   border-radius: 8px;
 }
 .container p {

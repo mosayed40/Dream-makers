@@ -6,9 +6,9 @@
   align-items: center;
   direction: rtl;
   justify-content: space-between;
-  background-color: #060c13;
   border-bottom: 1px solid #049dd9;
   z-index: 1000;
+  background-color: #060606;
 }
 .button {
   display: flex;
@@ -16,31 +16,16 @@
   align-items: center;
   gap: 4px;
 }
-.button a {
-  text-decoration: none;
-}
-.button:hover {
-  color: #ffffff;
+.ButtonTheMode {
+  background-color: #060606;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
-.but_1 {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  color: white;
-  padding: 6px 16px 14px 16px;
-  border-radius: 24px;
-  border: 1px solid #ffffff52;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 24px;
-  font-size: 14px;
-  text-align: right;
-  align-items: center;
+.ButtonTheApplication {
   justify-content: center;
-  background-color: #060c13;
-}
-.but_2 {
+  text-decoration: none;
   display: flex;
   height: 40px;
   color: #c0ecf5;
@@ -54,16 +39,22 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #060c13;
+  background-color: #060606;
+}
+.ButtonTheApplication:hover {
+  background-color: #049dd992;
+  color: #ffffff;
+  transition: 0.3s;
 }
 .container {
   height: 100%;
   display: flex;
   gap: 24px;
+  direction: rtl;
+  list-style: none;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-  direction: rtl;
-  overflow: hidden;
 }
 .pages {
   display: flex;
@@ -73,7 +64,7 @@
   color: grey;
 }
 .pages:hover {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -86,54 +77,38 @@
 }
 .menu {
   position: fixed;
-  top: 35px;
+  top: 48px;
   right: 0;
   width: 225px;
   height: 200vh;
   padding: 10px;
-  color: white;
-  background-color: #060c13ef;
+  background-color: var(--background-1);
 }
 .handleMenu {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
   gap: 12px;
 }
 .handleMenu ul {
   padding: 0;
 }
 .navLink {
-  color: #ffffffab;
+  color: var(--text-color-1);
   font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 .handlePageTitles {
   margin: 12px 0;
   padding: 6px 12px;
   border-radius: 8px;
-  background-color: #49778963;
+  background-color: var(--background-1);
   text-decoration: none;
 }
 .handlePageTitles:hover {
-  transition: 0.3s;
+  transition: 0.1s;
   background-color: #0aaeefb2;
-}
-.handleButton {
-  background: #049dd990;
-  color: #fff;
-  border: none;
-  height: 40px;
-  width: 80px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-}
-.handleButton:hover {
-  background-color: #049dd9;
-  cursor: pointer;
 }
 .menuContainer {
   display: none;
@@ -151,41 +126,34 @@
   }
   .button {
     gap: 2px;
-    min-width: 20%;
-    min-height: 100%;
   }
-  .but_2 {
+  .SubmitTheApplication {
     font-size: 0.8em;
     padding: 8px 24px;
   }
-  .but_1 {
-    font-size: 12px;
-    display: none;
-  }
+
   .menuContainer {
     display: block;
   }
 }
 @media screen and (min-width: 651px) and (max-width: 1024px) {
   .head {
-    padding: 10px 15px;
+    padding: 8px 16px;
   }
   .container {
     padding-right: 20px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     gap: 12px;
   }
   .button {
     gap: 4px;
   }
-  .but_2 {
-    padding: 8px 16;
+  .SubmitTheApplication {
+    padding: 8px 24;
     font-size: 0.6em;
   }
-  .but_1 {
-    font-size: 0.6em;
-  }
-  .statusMenu {
+
+  /* .statusMenu {
     display: none;
-  }
+  } */
 }

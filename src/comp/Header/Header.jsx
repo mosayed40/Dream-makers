@@ -1,15 +1,34 @@
 import { AlignLeft, X } from "lucide-react";
 import styles from "./Header.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  const [isDark, setIsDark] = useState(true);
+  const toggleMode = () => {
+    setIsDark(!isDark);
+  };
+  useEffect(() => {
+    const header = document.querySelector("body");
+    if (isDark) {
+      header.className = "dark";
+    } else {
+      header.className = "light";
+    }
+  }, [isDark]);
   return (
-    <header className={styles.head}>
+    <header id="header" className={styles.head}>
       <Menu />
       <Logo />
       <PageTitles />
-      <Buttons />
+      <div className={styles.button}>
+        <NavLink to="/request" className={styles.ButtonTheApplication}>
+          قدم طلب
+        </NavLink>
+        <button className={styles.ButtonTheMode} onClick={toggleMode}>
+          {isDark ? "🌙" : "🌞"}
+        </button>
+      </div>
     </header>
   );
 }
@@ -54,7 +73,6 @@ function Menu() {
                 </NavLink>
               ))}
             </ul>
-            <button className={styles.handleButton}>ع</button>
           </div>
         </div>
       )}
@@ -105,19 +123,6 @@ function Logo() {
         alt="image"
         className={styles.photo}
       />
-    </div>
-  );
-}
-
-// Buttons ***********
-function Buttons() {
-  return (
-    <div className={styles.button}>
-      <NavLink to="/request">
-        <button className={styles.but_2}>قدم طلب</button>
-      </NavLink>
-
-      <button className={styles.but_1}>ع</button>
     </div>
   );
 }

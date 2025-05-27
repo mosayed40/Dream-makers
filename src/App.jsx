@@ -9,7 +9,6 @@ import Prices from "./pages/prices-page/Price";
 import HowItWorks from "./pages/how-it-works/HowItWorks";
 import Blog from "./pages/blog-page/Blog";
 import About from "./pages/about-Us/AboutUs";
-
 export default function App() {
   return (
     <>

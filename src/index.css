@@ -3,3 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.light {
+  --text-color: #000;
+  --text-color-1: #202026cc;
+  --text-color-2: #20202699;
+  --background: #fefafa;
+  --background-1: #fefafa;
+  --backhround-2: #eaf0f1;
+  --background-3: #eaf0f1;
+  --background-4: #eaf0f1;
+}
+.dark {
+  --text-color: #fff;
+  --text-color-1: #e3e3e7d6;
+  --text-color-2: #868686e0;
+  --background: #060c13da;
+  --background-1: #58585dd4;
+  --backhround-2: #303f42c9;
+  --background-3: #2127288a;
+  --background-4: #58585dd4;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background);
+}
