@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
 import ComponentTitle from "../ComponentTitle";
 import styles from "./ProjectPricingExamples.module.css";
+import { useRef } from "react";
 
 export default function ProjectPricingExamples() {
+ 
+
   const data = [
     "نحن ندير الفريق",
     "تسليم MVP الأساسي",

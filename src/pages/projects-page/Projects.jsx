@@ -1,6 +1,6 @@
-import ComponentTitle from "../../comp/ComponentTitle";
-import LpOption from "../../comp/Home-page/Latest-Projects/Latest-p-option/L-P-option";
-import LpPhoto from "../../comp/Home-page/Latest-Projects/Latest-p-photo/L-P-photo";
+import ComponentTitle from "../../components/ComponentTitle";
+import LpOption from "../../components/Home-page/Latest-Projects/Latest-p-option/L-P-option";
+import LpPhoto from "../../components/Home-page/Latest-Projects/Latest-p-photo/L-P-photo";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
@@ -22,4 +22,3 @@ export default function Projects() {
     </div>
   );
 }
-

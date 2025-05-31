@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./comp/Header/Header";
-import Footer from "./comp/Footer/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/home-page/Home";
 import Services from "./pages/services/Services";
 import SendRequest from "./pages/send-request/SendRequest";
@@ -22,7 +22,6 @@ export default function App() {
         <Route path="/prices" element={<Prices />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        {/*####### تقديم طلب شراكة #######*/}
         <Route path="/request" element={<SendRequest />} />
       </Routes>
       <Footer />

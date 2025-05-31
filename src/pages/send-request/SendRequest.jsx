@@ -1,5 +1,5 @@
 import styles from "./SendRequest.module.css";
-import ComponentTitle from "../../comp/ComponentTitle";
+import ComponentTitle from "../../components/ComponentTitle";
 
 export default function SendRequest() {
   return (

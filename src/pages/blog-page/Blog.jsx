@@ -1,5 +1,5 @@
 import styles from "./Blog.module.css";
-import ComponentTitle from "../../comp/ComponentTitle";
+import ComponentTitle from "../../components/ComponentTitle";
 
 export default function Blog() {
   return (

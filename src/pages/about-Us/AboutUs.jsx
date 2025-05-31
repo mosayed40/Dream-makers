@@ -1,4 +1,4 @@
-import ComponentTitle from "../../comp/ComponentTitle";
+import ComponentTitle from "../../components/ComponentTitle";
 import styles from "./AboutUs.module.css";
 export default function About() {
   return (
