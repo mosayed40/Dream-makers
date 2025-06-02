@@ -4,8 +4,8 @@ export default function ComponentTitle({ title1, title2, dir, style }) {
   return (
     <div className={styles.container}>
       <img
-        src="/assets/icons/icon/Layer.svg"
         className={styles.icon}
+        src="/assets/icons/icon/Layer.svg"
         alt="icon"
       />
       <h2 dir={dir} style={style}>

@@ -22,7 +22,11 @@ function UnputName() {
       <h5>
         الاسم <span>(مطلوب)</span>
       </h5>
-      <input type="text" placeholder="اكتب الاسم هنا..." />
+      <input
+        className={styles.input}
+        type="text"
+        placeholder="اكتب الاسم هنا..."
+      />
     </div>
   );
 }
@@ -34,13 +38,21 @@ function UnputPhoneAndEmail() {
         <h5>
           رقم الهاتف <span>(مطلوب)</span>
         </h5>
-        <input type="number" placeholder="ادخل رقم الهاتف..." />
+        <input
+          className={styles.input}
+          type="number"
+          placeholder="ادخل رقم الهاتف..."
+        />
       </div>
       <div className={styles.UnputName}>
         <h5>
           البريد الالكتروني <span>(مطلوب)</span>
         </h5>
-        <input type="email" placeholder="ادخل عنوان البريد الالكترونى..." />
+        <input
+          className={styles.input}
+          type="email"
+          placeholder="ادخل عنوان البريد الالكترونى..."
+        />
       </div>
     </div>
   );
@@ -53,13 +65,12 @@ function UnputProject() {
         وصف المشروع <span>(مطلوب)</span>
       </h5>
 
-      <input
-        type="text"
+      <textarea
+        className={styles.input}
+        rows={5}
         placeholder="اعطنا وصف مبسط عن المشروع..."
-        style={{
-          height: "120px",
-        }}
-      />
+        type="text"
+      ></textarea>
     </div>
   );
 }

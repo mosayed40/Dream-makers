@@ -55,8 +55,11 @@
 .UnputName h5 span {
   color: var(--text-color-2);
 }
-.UnputName input {
-  display: block;
+/* .UnputName input {
+  
+} */
+.input{
+display: block;
   justify-content: start;
   align-items: start;
   text-align: start;
